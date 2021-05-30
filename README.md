@@ -13,4 +13,4 @@ npm install
 grunt
 ```
 
-The built project will be found in `dist/build.js`. The only significant dependency is [http://paperjs.org/](PaperJS).
+The built project will be found in `dist/build.js`. The only significant dependency is [Paper.js](http://paperjs.org/).
