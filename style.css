@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 1px;
+    height: 1px;
+    background-image: url(images/renderedsky.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px 0px;
+}
+
+#blur {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/renderedsky.jpg);
+    /*background-size: contain;*/
+    background-size: 100% 100%;
+    filter: blur(15px);
+    transform: scale(1.2);
+}
+
+#blur-outer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
